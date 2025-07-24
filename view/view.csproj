@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE490EB0-ACC9-4FA0-B227-641941434542}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>view</RootNamespace>
+    <AssemblyName>view</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adoptante\adoptanteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoptante\adoptanteForm.Designer.cs">
+      <DependentUpon>adoptanteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoptante\agregarAdoptanteForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoptante\agregarAdoptanteForm1.Designer.cs">
+      <DependentUpon>agregarAdoptanteForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoptante\buscarAdoptanteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoptante\buscarAdoptanteForm.Designer.cs">
+      <DependentUpon>buscarAdoptanteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoptante\eliminarAdoptanteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoptante\eliminarAdoptanteForm.Designer.cs">
+      <DependentUpon>eliminarAdoptanteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoptante\modificarAdoptanteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoptante\modificarAdoptanteForm.Designer.cs">
+      <DependentUpon>modificarAdoptanteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota\buscarMascotaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota\buscarMascotaForm.Designer.cs">
+      <DependentUpon>buscarMascotaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota\agregarMascotaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota\agregarMascotaForm.Designer.cs">
+      <DependentUpon>agregarMascotaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota\eliminarMascotaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota\eliminarMascotaForm.Designer.cs">
+      <DependentUpon>eliminarMascotaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota\modificarMascotaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota\modificarMascotaForm.Designer.cs">
+      <DependentUpon>modificarMascotaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mascota\mascotaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mascota\mascotaForm.Designer.cs">
+      <DependentUpon>mascotaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solicitud\agregarSolicitudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud\agregarSolicitudForm.Designer.cs">
+      <DependentUpon>agregarSolicitudForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\buscarSolicitudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud\buscarSolicitudForm.Designer.cs">
+      <DependentUpon>buscarSolicitudForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\eliminarSolicitudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud\eliminarSolicitudForm.Designer.cs">
+      <DependentUpon>eliminarSolicitudForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\modificarSolicitudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud\modificarSolicitudForm.Designer.cs">
+      <DependentUpon>modificarSolicitudForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\solicitudForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud\solicitudForm.Designer.cs">
+      <DependentUpon>solicitudForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adoptante\adoptanteForm.resx">
+      <DependentUpon>adoptanteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoptante\agregarAdoptanteForm1.resx">
+      <DependentUpon>agregarAdoptanteForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoptante\buscarAdoptanteForm.resx">
+      <DependentUpon>buscarAdoptanteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoptante\eliminarAdoptanteForm.resx">
+      <DependentUpon>eliminarAdoptanteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoptante\modificarAdoptanteForm.resx">
+      <DependentUpon>modificarAdoptanteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota\agregarMascotaForm.resx">
+      <DependentUpon>agregarMascotaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota\buscarMascotaForm.resx">
+      <DependentUpon>buscarMascotaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota\eliminarMascotaForm.resx">
+      <DependentUpon>eliminarMascotaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota\modificarMascotaForm.resx">
+      <DependentUpon>modificarMascotaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mascota\mascotaForm.resx">
+      <DependentUpon>mascotaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Solicitud\agregarSolicitudForm.resx">
+      <DependentUpon>agregarSolicitudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud\buscarSolicitudForm.resx">
+      <DependentUpon>buscarSolicitudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud\eliminarSolicitudForm.resx">
+      <DependentUpon>eliminarSolicitudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud\modificarSolicitudForm.resx">
+      <DependentUpon>modificarSolicitudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud\solicitudForm.resx">
+      <DependentUpon>solicitudForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\data\data.csproj">
+      <Project>{8778557a-be26-4ac8-888d-e7c504c6ea07}</Project>
+      <Name>data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\logic\logic.csproj">
+      <Project>{272bd8d6-cc26-4965-97df-627948b07c57}</Project>
+      <Name>logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
