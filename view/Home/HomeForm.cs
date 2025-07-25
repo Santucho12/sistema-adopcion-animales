@@ -131,18 +131,23 @@ namespace view.Home
         {
             mascotaForm verMascotas = new mascotaForm();
             verMascotas.ShowDialog();
+            this.Close();
+
         }
 
         private void buttonVerAdoptantes_Click(object sender, EventArgs e)
         {
             adoptanteForm verAdoptantes = new adoptanteForm();
             verAdoptantes.ShowDialog();
+            this.Close();
+
         }
 
         private void buttonVerSolicitudes_Click(object sender, EventArgs e)
         {
             solicitudForm verSolicitudes = new solicitudForm();
             verSolicitudes.ShowDialog();
+            this.Close();
         }
     }
 }

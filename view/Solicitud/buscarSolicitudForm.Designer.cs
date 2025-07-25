@@ -69,9 +69,6 @@
             this.labelFormbuscarMascotaTitulo.Size = new System.Drawing.Size(250, 27);
             this.labelFormbuscarMascotaTitulo.TabIndex = 4;
             this.labelFormbuscarMascotaTitulo.Text = "Buscar solicitud por id";
-            this.labelFormbuscarMascotaTitulo.Size = new System.Drawing.Size(252, 27);
-            this.labelFormbuscarMascotaTitulo.TabIndex = 4;
-            this.labelFormbuscarMascotaTitulo.Text = "Buscar mascota por id";
             // 
             // buscarSolicitudForm
             // 

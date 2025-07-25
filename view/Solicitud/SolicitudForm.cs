@@ -64,21 +64,17 @@ namespace view.Solicitud
         private void buttonAgregar_Click_1(object sender, EventArgs e)
         {
             var agregarForm = new agregarSolicitudForm();
-            var resultado = agregarForm.ShowDialog();
+            this.Close();
+            agregarForm.ShowDialog();
 
-           
-                recargarDgv();
-            
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             var eliminarForm = new eliminarSolicitudForm(presenter);
-            var resultado = eliminarForm.ShowDialog();
+            this.Close();
+            eliminarForm.ShowDialog();
 
-           
-                recargarDgv();
-            
         }
 
         private void buttonModificarForm_Click(object sender, EventArgs e)
@@ -87,14 +83,9 @@ namespace view.Solicitud
             {
                 var filaSeleccionada = dgvSolicitudes.SelectedRows[0];
                 var solicitud = (data.models.Solicitud)filaSeleccionada.DataBoundItem;
-
-
                 var modificarForm = new modificarSolicitudForm(solicitud);
-                var resultado = modificarForm.ShowDialog();
-
-               
-                    recargarDgv();
-                
+                this.Close();
+                modificarForm.ShowDialog();
             }
             else
             {
@@ -186,8 +177,10 @@ namespace view.Solicitud
 
         private void buttonRegresar_Click_2(object sender, EventArgs e)
         {
-            HomeForm Menu = new HomeForm();
-            Menu.ShowDialog();
+            var home = new HomeForm();
+            this.Close();
+            home.ShowDialog();
+
         }
     }
 }

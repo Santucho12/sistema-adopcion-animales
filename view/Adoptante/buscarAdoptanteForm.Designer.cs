@@ -66,9 +66,9 @@
             this.labelFormbuscarAdoptanteTitulo.Font = new System.Drawing.Font("Arial", 14.25F);
             this.labelFormbuscarAdoptanteTitulo.Location = new System.Drawing.Point(129, 81);
             this.labelFormbuscarAdoptanteTitulo.Name = "labelFormbuscarAdoptanteTitulo";
-            this.labelFormbuscarAdoptanteTitulo.Size = new System.Drawing.Size(252, 27);
+            this.labelFormbuscarAdoptanteTitulo.Size = new System.Drawing.Size(268, 27);
             this.labelFormbuscarAdoptanteTitulo.TabIndex = 4;
-            this.labelFormbuscarAdoptanteTitulo.Text = "Buscar mascota por id";
+            this.labelFormbuscarAdoptanteTitulo.Text = "buscar adoptante por id";
             // 
             // buscarAdoptanteForm
             // 

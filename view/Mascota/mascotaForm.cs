@@ -29,7 +29,25 @@ namespace view
 
         }
 
-        private void buttonBuscar_Click(object sender, EventArgs e)
+    
+
+       
+
+
+
+        private void buttonRegresar_Click(object sender, EventArgs e)
+        {
+
+            HomeForm Menu = new HomeForm();
+
+
+            // Actualiza el DataGridView cuando se cierre el formulario de Agregar
+
+
+            Menu.ShowDialog();
+        }
+
+        private void buttonBuscar_Click_1(object sender, EventArgs e)
         {
             // Crear y mostrar el formulario de búsqueda
             buscarMascotaForm buscarMascota = new buscarMascotaForm();
@@ -62,7 +80,7 @@ namespace view
             }
         }
 
-        private void buttonAgregar_Click(object sender, EventArgs e)
+        private void buttonAgregar_Click_1(object sender, EventArgs e)
         {
             agregarMascotaForm agregarMascota = new agregarMascotaForm();
 
@@ -70,25 +88,13 @@ namespace view
             // Actualiza el DataGridView cuando se cierre el formulario de Agregar
             agregarMascota.FormClosed += (s, args) =>
             {
-               recargarDgv();
+                recargarDgv();
             };
 
             agregarMascota.ShowDialog();
         }
 
-        private void buttonEliminar_Click(object sender, EventArgs e)
-        {
-            eliminarMascotaForm eliminarMascota = new eliminarMascotaForm(presenter);
-
-            eliminarMascota.FormClosed += (s, args) =>
-            {
-                recargarDgv();
-            };
-
-            eliminarMascota.ShowDialog();
-        }
-
-        private void buttonModificarForm_Click(object sender, EventArgs e)
+        private void buttonModificarForm_Click_1(object sender, EventArgs e)
         {
             if (dgvMascotas.CurrentCell != null)
             {
@@ -124,7 +130,17 @@ namespace view
             }
         }
 
-      
+        private void buttonEliminar_Click_1(object sender, EventArgs e)
+        {
+            eliminarMascotaForm eliminarMascota = new eliminarMascotaForm(presenter);
+
+            eliminarMascota.FormClosed += (s, args) =>
+            {
+                recargarDgv();
+            };
+
+            eliminarMascota.ShowDialog();
+        }
         private void recargarDgv()
         {
             // 🔧 Activar doble buffer para scroll más fluido
@@ -189,18 +205,6 @@ namespace view
             }
             dgvMascotas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-        }
-
-        private void buttonRegresar_Click(object sender, EventArgs e)
-        {
-
-            HomeForm Menu = new HomeForm();
-
-
-            // Actualiza el DataGridView cuando se cierre el formulario de Agregar
-
-
-            Menu.ShowDialog();
         }
     }
 

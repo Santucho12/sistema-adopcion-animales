@@ -87,6 +87,7 @@
             this.buttonAgregar.TabIndex = 14;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click_1);
             // 
             // buttonEliminar
             // 
@@ -100,6 +101,7 @@
             this.buttonEliminar.TabIndex = 13;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click_1);
             // 
             // buttonModificarForm
             // 
@@ -113,6 +115,7 @@
             this.buttonModificarForm.TabIndex = 12;
             this.buttonModificarForm.Text = "Modificar";
             this.buttonModificarForm.UseVisualStyleBackColor = false;
+            this.buttonModificarForm.Click += new System.EventHandler(this.buttonModificarForm_Click_1);
             // 
             // buttonBuscar
             // 
@@ -126,6 +129,7 @@
             this.buttonBuscar.TabIndex = 11;
             this.buttonBuscar.Text = "Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = false;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click_1);
             // 
             // mascotaForm
             // 

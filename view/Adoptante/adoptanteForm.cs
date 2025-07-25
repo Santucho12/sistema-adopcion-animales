@@ -20,7 +20,7 @@ namespace view
             presenter = new AdoptantePresenter();
         }
 
-      
+
         private void recargarDgv()
         {
             typeof(DataGridView).InvokeMember("DoubleBuffered",
@@ -88,7 +88,7 @@ namespace view
             recargarDgv();
         }
 
-       
+
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
@@ -126,7 +126,7 @@ namespace view
 
         }
 
-      
+
 
         private void buttonModificarForm_Click(object sender, EventArgs e)
         {
@@ -203,5 +203,5 @@ namespace view
             Menu.ShowDialog();
         }
         }
-    
+
 }
