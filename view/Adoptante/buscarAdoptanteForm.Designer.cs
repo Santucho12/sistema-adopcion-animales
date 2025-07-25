@@ -40,7 +40,7 @@
             this.buttonBuscarAdoptante.Name = "buttonBuscarAdoptante";
             this.buttonBuscarAdoptante.Size = new System.Drawing.Size(75, 23);
             this.buttonBuscarAdoptante.TabIndex = 7;
-            this.buttonBuscarAdoptante.Text = "Enviar";
+            this.buttonBuscarAdoptante.Text = "Buscar";
             this.buttonBuscarAdoptante.UseVisualStyleBackColor = true;
             this.buttonBuscarAdoptante.Click += new System.EventHandler(this.buttonBuscarAdoptante_Click);
             // 

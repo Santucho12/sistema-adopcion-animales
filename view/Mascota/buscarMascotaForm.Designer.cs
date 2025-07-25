@@ -69,7 +69,7 @@
             this.buttonBuscarMascotaForm.Name = "buttonBuscarMascotaForm";
             this.buttonBuscarMascotaForm.Size = new System.Drawing.Size(75, 23);
             this.buttonBuscarMascotaForm.TabIndex = 3;
-            this.buttonBuscarMascotaForm.Text = "Enviar";
+            this.buttonBuscarMascotaForm.Text = "Buscar";
             this.buttonBuscarMascotaForm.UseVisualStyleBackColor = true;
             this.buttonBuscarMascotaForm.Click += new System.EventHandler(this.buttonBuscarMascotaForm_Click_1);
             // 

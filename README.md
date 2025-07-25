@@ -22,6 +22,14 @@
 3. Restaurá los paquetes NuGet si hace falta.
 4. Compilá la solución y ejecutá el proyecto.
 
+## 📦 Dependencias NuGet
+
+Al abrir el proyecto en Visual Studio, asegurate de restaurar los paquetes NuGet. Esto se hace automáticamente o desde el menú “Herramientas > Administrador de paquetes NuGet > Restaurar paquetes”.
+
+Si usás la terminal, podés ejecutar:
+
+    dotnet restore
+
 ## 💡 Tecnologías y buenas prácticas
 
 - **C# .NET WinForms**: Interfaz gráfica robusta y fácil de mantener.
@@ -30,3 +38,5 @@
 - **UI profesional**: Paleta de colores coherente, fuente Segoe UI, íconos FontAwesome.
 - **Código comentado y organizado**: Facilita el mantenimiento y la revisión por parte de reclutadores.
 - **Confirmaciones y feedback**: Mensajes claros ante errores y acciones exitosas.
+
+ “La adopción responsable cambia vidas. ¡Sumate a la transformación digital de los refugios!”
